@@ -38,12 +38,12 @@ Helper, Customer, TableManager
 
 ## 3) Helper
 
-###Responsibilities:
+### Responsibilities:
 + Add customer informed by WaitlistManager to waitlist
 + Remove customer informed by WaitlistManager from waitlist
 
-###Collaborators: WaitlistManager
-
+### Collaborators: 
+WaitlistManager
 
 ## 4) TableManager
 

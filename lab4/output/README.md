@@ -1,31 +1,31 @@
 
-##1) Customer
+## 1) Customer
 
-###Responsibilities:
-Sign up for a table
+### Responsibilities:
++ Sign up for a table
 Join the waitlist
 Leave the waitlist
 Confirm to be in the waitlist
 Pass table to next customer if it does not meet required capacity
 
-###Collaborators: 
+### Collaborators: 
 WaitlistManager
 
 
-##2) WaitlistManager
+## 2) WaitlistManager
 
-###Responsibilities:
-+Ask helper to add customer to waitlist
-+Ask helper to remove customer to waitlist
+### Responsibilities:
++ Ask helper to add customer to waitlist
++ Ask helper to remove customer to waitlist
 +Send sign-up confirmation to Customer
 +Ask customer to confirm or leave waitlist
 +Record responses of Customer
 +Get information from table manager about available tables
 +Assign table to top customer in waitlist
 
-###Collaborators: Helper, Customer, TableManager
+### Collaborators: Helper, Customer, TableManager
 
-##3) Helper
+## 3) Helper
 
 ###Responsibilities:
 Add customer informed by WaitlistManager to waitlist
@@ -34,20 +34,20 @@ Remove customer informed by WaitlistManager from waitlist
 ###Collaborators: WaitlistManager
 
 
-##4) TableManager
+## 4) TableManager
 
-###Responsibilities:
+### Responsibilities:
 Check if any table is available
 Record capacity of available table
 Inform WaitlistManager about available tables
 
-###Collaborators: Table, WaitlistManager
+### Collaborators: Table, WaitlistManager
 
-##5) Table
+## 5) Table
 
-###Responsibilities:
+### Responsibilities:
 Maintain current status of table's availability (available/ not available)
 Record capacity of table
-###Collaborators: TableManager
+### Collaborators: TableManager
 
 

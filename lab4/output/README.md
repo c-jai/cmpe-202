@@ -33,7 +33,8 @@ WaitlistManager
 + Get information from table manager about available tables
 + Assign table to top customer in waitlist
 
-### Collaborators: Helper, Customer, TableManager
+### Collaborators: 
+Helper, Customer, TableManager
 
 ## 3) Helper
 
@@ -51,13 +52,15 @@ WaitlistManager
 + Record capacity of available table
 + Inform WaitlistManager about available tables
 
-### Collaborators: Table, WaitlistManager
+### Collaborators: 
+Table, WaitlistManager
 
 ## 5) Table
 
 ### Responsibilities:
 + Maintain current status of table's availability (available/ not available)
 + Record capacity of table
-### Collaborators: TableManager
+### Collaborators: 
+TableManager
 
 

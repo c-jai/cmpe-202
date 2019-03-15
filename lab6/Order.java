@@ -3,8 +3,8 @@ package fiveguys;
 import java.util.ArrayList;
 
 public class Order {
-	ArrayList<OrderItem> orderItems;
-	String orderID;
+	private ArrayList<OrderItem> orderItems;
+	private String orderID;
 	private PrintOrderStrategy printStrategy;
 	
 	public Order(String id){
@@ -22,6 +22,10 @@ public class Order {
 	
 	public Double getTotalPrice(){
 		return 0.00;
+	}
+	
+	public String getOrderID(){
+		return orderID;
 	}
 	
 	public void setPrintStrategy(PrintOrderStrategy ps){

@@ -5,11 +5,14 @@ import java.util.ArrayList;
 public class OrderItem {
 	ArrayList<BurgerComponent> burgerComponents;
 	Double price;
+	int quantity;
 	String name;
 	
-	public OrderItem(String n){
+	public OrderItem(String n, int q, Double p){
 		burgerComponents = new ArrayList<BurgerComponent>();
 		name = n;
+		quantity = q;
+		price = p;
 	}
 	
 	public void addBurgerComponent(BurgerComponent bc){
@@ -20,8 +23,11 @@ public class OrderItem {
 		return burgerComponents;
 	}
 	
+	public int getQuantity(){
+		return quantity;
+	}
 	public Double getPrice(){
-		return 0.00;
+		return price;
 	}
 	
 	public String getName(){

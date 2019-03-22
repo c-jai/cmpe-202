@@ -13,8 +13,8 @@ public class Side extends LeafDecorator{
 		
 		if(options.length >0) { //to check if it is "on a bun" or "in a bowl"
 			this.option = options[0];
-			
-			this.price = 3.00;
+			if(!"No Side".equals(option))
+				this.price = 3.00;
 		}
 		
 	}

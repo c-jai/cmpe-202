@@ -18,13 +18,17 @@ public class CreditCardNum implements IDisplayComponent, IKeyEventHandler
 	}	
 
 	public void key(String ch, int cnt) {
-		if ( cnt > 0 && cnt <= 16 ) {
-			if("X".equals(ch) && number.length()>0) {
-				System.out.println("in if");
+		if("X".equals(ch) && cnt < 16)
+		{
+			number = number.trim();
+			if(number.length() > 1)
 				number = number.substring(0, number.length()-1);
-			}
 			else
-				number += ch ;
+				number = "";
+		}		
+		else if ( !"X".equals(ch) && cnt <= 16 )
+		{
+			number += ch ;
 		}
 			
 		else if ( nextHandler != null )

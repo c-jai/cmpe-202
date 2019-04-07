@@ -9,7 +9,6 @@ public class CreditCardExpDecorator implements IDisplayComponent, IKeyEventHandl
 	
 	@Override
 	public void key(String ch, int cnt) {
-		
 		if(cnt == 19)
 			ch = "/" + ch;
 		

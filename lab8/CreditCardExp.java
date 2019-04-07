@@ -18,8 +18,20 @@ public class CreditCardExp implements IDisplayComponent, IKeyEventHandler
 	}	
 
 	public void key(String ch, int cnt) {
-		if ( cnt >= 17 && cnt <= 20  )
+		
+		if("X".equals(ch) && cnt < 20)
+		{
+			if(cnt == 18) {
+				
+				date = date.substring(0, date.length()-2);
+			}
+			else
+				date = date.substring(0, date.length()-1);
+		}
+		else if ( !"X".equals(ch) &&  cnt >= 17 && cnt <= 20  ) {
 			date += ch ;
+		}
+			
 		else if ( nextHandler != null )
 			nextHandler.key(ch, cnt) ;
 	}	

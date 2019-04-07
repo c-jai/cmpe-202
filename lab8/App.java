@@ -43,9 +43,9 @@ public class App {
     }
 
     public void key(String ch) {
-    	if("X".equals(ch) && count > 1)
+    	if("X".equals(ch))
     		count--;
-    	else if(!"X".equals(ch))
+    	else
     		count++;
         screen.key(ch, count);
     }

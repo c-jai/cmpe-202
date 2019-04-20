@@ -3,6 +3,8 @@
 - Functional interfaces are basically interfaces having only one abstract method. 
 - Lambda expressions are anonymous methods used to provide implementation for the abstract method of the functional interface.
 
+# Java solution and Java Lambda solution
+
 - As we can see from the code, in case of Java implementation (without Lambda expressions), we have created an interface “WeaponBehaviour” and its implementation classes “AxeBehaviour”, “SwordBehaviour”, “PoisonBehaviour”.
 - The implementation classes provide implementation for the method “useWeapon()” provided by the WeaponBehaviour interface. Since WeaponBehaviour has only one method i.e. useWeapon(), it is a functional interface.
 

@@ -5,6 +5,8 @@
 
 # Java solution and Java Lambda solution
 
+- I have implemented the Strategy pattern using Java and Lambda expression. Game characters like king, queen, knight etc can use any one weapon at a time, however they can change their weapons throughout the game. Thus the game characters can change their weapon strategies runtime.
+
 - As we can see from the code, in case of Java implementation (without Lambda expressions), we have created an interface “WeaponBehaviour” and its implementation classes “AxeBehaviour”, “SwordBehaviour”, “PoisonBehaviour”.
 - The implementation classes provide implementation for the method “useWeapon()” provided by the WeaponBehaviour interface. Since WeaponBehaviour has only one method i.e. useWeapon(), it is a functional interface.
 

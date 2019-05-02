@@ -11,6 +11,12 @@
 
 ## Screenshot for Crank Model, with cost of one gumball = 25 cents
 ![](output/GumballMachineV2_Crank25.png)
+
 ## Screenshot for Crank Model, with cost of one gumball = 50 cents
+![](output/GumballMachineV2_Crank50.png)
+
 ## Screenshot for Slot Model, with cost of one gumball = 25 cents
+![](output/GumballMachineV2_Slot25.png)
+
 ## Screenshot for Slot Model, with cost of one gumball = 50 cents
+![](output/GumballMachineV2_Slot50.png)
